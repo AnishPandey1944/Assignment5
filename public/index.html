@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hit Counter - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Hit Counter</h1>
+    <div class="hit-display">
+      This page has been viewed <span id="hit-count">0</span> times.
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="page1.html">Page 1</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+      </ul>
+    </nav>
+    <div class="hit-summary">
+      <h2>All Page Hits</h2>
+      <ul id="all-hits"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    // Specify the page ID for this page
+    document.addEventListener('DOMContentLoaded', () => {
+      updateHitCount('home');
+      updateAllHits();
+    });
+  </script>
+</body>
+</html>

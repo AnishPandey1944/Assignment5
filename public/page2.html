@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hit Counter - Page 2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Page 2</h1>
+    <div class="hit-display">
+      This page has been viewed <span id="hit-count">0</span> times.
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page1.html">Page 1</a></li>
+        <li><a href="page2.html" class="active">Page 2</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <p>This is Page 2 of our hit counter demo.</p>
+    </div>
+    <div class="hit-summary">
+      <h2>All Page Hits</h2>
+      <ul id="all-hits"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      updateHitCount('page2');
+      updateAllHits();
+    });
+  </script>
+</body>
+</html>

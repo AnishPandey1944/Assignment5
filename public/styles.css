@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .hit-display {
+    background-color: #f8f8f8;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  #hit-count {
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    background-color: #333;
+    margin: 20px 0;
+  }
+  
+  nav ul li {
+    flex: 1;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  nav ul li a.active {
+    background-color: #e74c3c;
+  }
+  
+  .content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .hit-summary {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+  }
+  
+  .hit-summary h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 20px;
+  }
+  
+  .hit-summary ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .hit-summary li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .hit-summary li:last-child {
+    border-bottom: none;
+  }
